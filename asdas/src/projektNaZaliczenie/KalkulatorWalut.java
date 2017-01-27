@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 import java.io.BufferedReader;
 
-//Program "Kalkulator walut"      Grupa E10/I semestr/2017/Krzysiek_Gruszecki&Przemys³aw_Grzejdziak
+//Program "Kalkulator walut"      Grupa E10/I semestr/2017/Krzysiek_Gruszecki&PrzemysÅ‚aw_Grzejdziak
 public class KalkulatorWalut {
 
 	private static DecimalFormat dwiePoPrzecinku = new DecimalFormat(".##");
@@ -34,14 +34,14 @@ public class KalkulatorWalut {
 		return tab;
 	}
 
-	public static int menu() { // menu <wybór>
+	public static int menu() { // menu <wybÃ³r>
 
-		System.out.println("Co chesz zrobiæ?");
-		System.out.println("1) Kupiæ dan¹ walutê");
-		System.out.println("2) Sprzedaæ dan¹ walutê");
-		System.out.println("3) Wymieniæ z danej waluty na inn¹");
-		System.out.println("4) Pozosta³e");
-		System.out.println("0) Wyjœcie");
+		System.out.println("Co chesz zrobiÄ‡?");
+		System.out.println("1) KupiÄ‡ danÄ… walutÄ™");
+		System.out.println("2) SprzedaÄ‡ danÄ… walutÄ™");
+		System.out.println("3) WymieniÄ‡ z danej waluty na innÄ…");
+		System.out.println("4) PozostaÅ‚e");
+		System.out.println("0) WyjÅ›cie");
 		return pobierzInta();
 	}
 
@@ -90,33 +90,33 @@ public class KalkulatorWalut {
 		int kwota4;
 		try {
 
-			System.out.println("1) Twórcy");
-			System.out.println("2) Co mogê kupiæ za dan¹ kwotê");
+			System.out.println("1) TwÃ³rcy");
+			System.out.println("2) Co mogÄ™ kupiÄ‡ za danÄ… kwotÄ™");
 			coKupie = pobierzInta();
-			if (coKupie == 2) { // "Co kupiê za dan¹ kwotê"
-				System.out.println("Ile chcesz wydaæ?");
+			if (coKupie == 2) { // "Co kupiÄ™ za danÄ… kwotÄ™"
+				System.out.println("Ile chcesz wydaÄ‡?");
 				Thread.sleep(1000);
-				System.err.println("Kwota musi zostaæ podana w Nilfgaardzkich florenach!!!!");
+				System.err.println("Kwota musi zostaÄ‡ podana w Nilfgaardzkich florenach!!!!");
 				Thread.sleep(3790);
-				System.out.println("Nie no ¿artowa³em");
+				System.out.println("Nie no Å¼artowaÅ‚em");
 				Thread.sleep(2495);
-				System.out.println("A mo¿e jednak nie?");
+				System.out.println("A moÅ¼e jednak nie?");
 				Thread.sleep(2890);
-				System.out.println("Dobra, ¿artowa³em... Kwota musi zostaæ podana w z³otówkach");
+				System.out.println("Dobra, Å¼artowaÅ‚em... Kwota musi zostaÄ‡ podana w zÅ‚otÃ³wkach");
 				kwota4 = pobierzInta();
 				Thread.sleep(400);
-				System.out.println("Za tak¹ kwotê kupisz: ");
+				System.out.println("Za takÄ… kwotÄ™ kupisz: ");
 				Thread.sleep(500);
 				System.out.println(kwota4 / 3100 + " GTX 1080");
 				Thread.sleep(550);
-				System.out.println(kwota4 / 323 + " Warunków na wydziale");
+				System.out.println(kwota4 / 323 + " WarunkÃ³w na wydziale");
 				Thread.sleep(580);
-				System.out.println(kwota4 / 40000 + " Fajnych samochodów");
+				System.out.println(kwota4 / 40000 + " Fajnych samochodÃ³w");
 				Thread.sleep(800);
-				System.out.println(kwota4 / 4 + " soków 100%");
+				System.out.println(kwota4 / 4 + " sokÃ³w 100%");
 				Thread.sleep(1000);
-			} else if (coKupie == 1) { // Twórcy programu
-				System.err.println("Twórcy programu:");
+			} else if (coKupie == 1) { // TwÃ³rcy programu
+				System.err.println("TwÃ³rcy programu:");
 				Thread.sleep(800);
 				System.out.print("Krzysiek ");
 				Thread.sleep(400);
@@ -124,7 +124,7 @@ public class KalkulatorWalut {
 				Thread.sleep(400);
 				System.out.println("&");
 				Thread.sleep(420);
-				System.out.print("Przemys³aw ");
+				System.out.print("PrzemysÅ‚aw ");
 				Thread.sleep(450);
 				System.out.println("Grzejdziak");
 			}
@@ -132,7 +132,7 @@ public class KalkulatorWalut {
 		}
 
 		catch (Exception e) {
-			System.out.println("Z³e dane");
+			System.out.println("ZÅ‚e dane");
 		}
 
 	}
@@ -155,11 +155,11 @@ public class KalkulatorWalut {
 				} else if (wybor == 3) {
 					wymianaWalut(wartosciWalut);
 				} else if (wybor == 0) { // koniec programu
-					System.out.println("Dziêkujemy za skorzystanie z programu");
-				} else if (wybor == 4) { // Kategoria pozosta³e
+					System.out.println("DziÄ™kujemy za skorzystanie z programu");
+				} else if (wybor == 4) { // Kategoria pozostaÅ‚e
 					pozostaleNieDotyczyProjektu();
 				} else if (wybor == 9999) {
-					System.out.println("Wprowadzono b³êdne dane, program zakoñczy³ dzia³anie");
+					System.out.println("Wprowadzono bÅ‚Ä™dne dane, program zakoÅ„czyÅ‚ dziaÅ‚anie");
 				}
 
 				Thread.sleep(1900);
@@ -168,10 +168,10 @@ public class KalkulatorWalut {
 			} while (wybor != 0 && wybor != 9999);
 		}
 
-		catch (Exception e) { // zle podane dane koñcz¹ dzia³anie programu z
+		catch (Exception e) { // zle podane dane koÅ„czÄ… dziaÅ‚anie programu z
 								// syso
 
-			System.out.println("B³êdne dane, program zakoñczy³ dzia³anie");
+			System.out.println("BÅ‚Ä™dne dane, program zakoÅ„czyÅ‚ dziaÅ‚anie");
 
 		}
 
@@ -179,34 +179,34 @@ public class KalkulatorWalut {
 
 	private static void kupnoWaluty(String[][] wartosciWalut) {
 
-		System.out.println("Co chcesz kupiæ?");
+		System.out.println("Co chcesz kupiÄ‡?");
 		int w1 = wybierzWalute(wartosciWalut);
-		System.out.println("Ile chcesz kupiæ " + wartosciWalut[w1 - 1][0] + "?");
+		System.out.println("Ile chcesz kupiÄ‡ " + wartosciWalut[w1 - 1][0] + "?");
 		System.out.println(" ");
 		int kwota1 = pobierzInta();
 		double kwota2 = kwota1 * Double.parseDouble(wartosciWalut[w1 - 1][2]);
-		System.out.println("Ca³kowity koszt: " + dwiePoPrzecinku.format(kwota2) + "PLN");
+		System.out.println("CaÅ‚kowity koszt: " + dwiePoPrzecinku.format(kwota2) + " PLN");
 	}
 
 	private static void sprzedazWalut(String[][] wartosciWalut) {
-		System.out.println("Jak¹ walutê chcesz sprzedaæ?");
+		System.out.println("JakÄ… walutÄ™ chcesz sprzedaÄ‡?");
 		int w1 = wybierzWalute(wartosciWalut);
-		System.out.println("Ile chcesz sprzedaæ " + wartosciWalut[w1 - 1][0] + "?");
+		System.out.println("Ile chcesz sprzedaÄ‡ " + wartosciWalut[w1 - 1][0] + "?");
 		int kwota1 = pobierzInta();
 		double kwota2 = kwota1 * Double.parseDouble(wartosciWalut[w1 - 1][1]);
-		System.out.println("Kwota jak¹ dostaniesz: " + dwiePoPrzecinku.format(kwota2) + "PLN");
+		System.out.println("Kwota jakÄ… dostaniesz: " + dwiePoPrzecinku.format(kwota2) + " PLN");
 	}
 
 	private static void wymianaWalut(String[][] wartosciWalut) {
-		System.out.println("Ile chcesz wymieniæ?");
+		System.out.println("Ile chcesz wymieniÄ‡?");
 		int kwota1 = pobierzInta();
-		System.out.println("Jak¹ walutê chcesz wymieniæ?");
+		System.out.println("JakÄ… walutÄ™ chcesz wymieniÄ‡?");
 		int w1 = wybierzWalute(wartosciWalut);
 		double kwota2 = kwota1 * Double.parseDouble(wartosciWalut[w1 - 1][1]);
-		System.out.println("Na jak¹?");
+		System.out.println("Na jakÄ…?");
 		int ww = wybierzWalute(wartosciWalut);
 		double kwota3 = kwota2 / Double.parseDouble(wartosciWalut[ww - 1][2]);
-		System.out.println("Kwota jak¹ dostaniesz: " + dwiePoPrzecinku.format(kwota3) + " " + wartosciWalut[ww - 1][0]);
+		System.out.println("Kwota jakÄ… dostaniesz: " + dwiePoPrzecinku.format(kwota3) + " " + wartosciWalut[ww - 1][0]);
 	}
 
 	public static void main(String[] args) throws IOException {
