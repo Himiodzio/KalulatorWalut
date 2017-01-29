@@ -95,13 +95,13 @@ public class KalkulatorWalut {
 			coKupie = pobierzInta();
 			if (coKupie == 2) { // "Co kupię za daną kwotę"
 				System.out.println("Ile chcesz wydać?");
-				Thread.sleep(1000);
+				Thread.sleep(900);
 				System.err.println("Kwota musi zostać podana w Nilfgaardzkich florenach!!!!");
-				Thread.sleep(3790);
+				Thread.sleep(1490);
 				System.out.println("Nie no żartowałem");
-				Thread.sleep(2495);
+				Thread.sleep(1395);
 				System.out.println("A może jednak nie?");
-				Thread.sleep(2890);
+				Thread.sleep(1490);
 				System.out.println("Dobra, żartowałem... Kwota musi zostać podana w złotówkach");
 				kwota4 = pobierzInta();
 				Thread.sleep(400);
@@ -162,7 +162,7 @@ public class KalkulatorWalut {
 					System.out.println("Wprowadzono błędne dane, program zakończył działanie");
 				}
 
-				Thread.sleep(1900);
+				Thread.sleep(2200);
 				System.out.println(" ");
 
 			} while (wybor != 0 && wybor != 9999);
