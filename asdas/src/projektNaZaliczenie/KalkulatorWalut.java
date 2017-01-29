@@ -214,5 +214,4 @@ public class KalkulatorWalut {
 		obliczanieWalut(args.length > 0 ? args[0] : "kursy_walut2.csv");
 
 	}
-
 }
